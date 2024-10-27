@@ -1,7 +1,7 @@
 ---
-title: Nächste Schritte
+title: TODO
 eleventyNavigation:
-  title: Nächste Schritte
+  title: TODO
   key: de_next
   order: 8
   parent: de

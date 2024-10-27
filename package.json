@@ -1,7 +1,7 @@
 {
-  "name": "teaching-parametric-design",
+  "name": "teaching-inclusive-design",
   "version": "1.0.0",
-  "description": "teaching parametric design at university of applied sciences potsdam",
+  "description": "teaching inclusive design at university of applied sciences potsdam",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -12,20 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FH-Potsdam/teaching-parametric-design.git"
+    "url": "git+https://github.com/FH-Potsdam/teaching-inclusive-design.git"
   },
   "keywords": [
-    "parametric",
-    "generative",
-    "design",
-    "p5js"
+    "inclusive",
+    "design"
   ],
   "author": "sebastian-meier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FH-Potsdam/teaching-parametric-design/issues"
+    "url": "https://github.com/FH-Potsdam/teaching-inclusive-design/issues"
   },
-  "homepage": "https://github.com/FH-Potsdam/teaching-parametric-design#readme",
+  "homepage": "https://github.com/FH-Potsdam/teaching-inclusive-design#readme",
   "engines": {
     "npm": ">=8.3.0",
     "node": ">=16.13.1"

@@ -1,9 +1,9 @@
 [Deutsche Version](README_de.md)
-# Parametric Design
-![Parametric Design](https://github.com/FH-Potsdam/teaching-parametric-design/blob/main/parametric-design.png?raw=true)
-Teaching Material for the "Parametric Design" seminar at the [design department](https://www.fh-potsdam.de/design/) at the Potsdam University of Applied Sciences.
+# Inclusive Design
+![Inclusive Design](https://github.com/FH-Potsdam/teaching-inclusive-design/blob/main/inclusive-design.png?raw=true)
+Teaching Material for the "Inclusive Design" seminar at the [design department](https://www.fh-potsdam.de/design/) at the Potsdam University of Applied Sciences.
 
-**Welcome to parametric design 👋**
+**Welcome to inclusive design 👋**
 This seminar is an introduction creating design artifacts with code. In contrast to other creative coding classes, we take a specific focus on how to use code to create digital artifacts that we can use in other software or even rapid prototyping tools like laser cutters/engravers, CNC machines, 3D-printers or even stitching machines.
 
 You need no prior knowledge of any of those tools and systems. You just need to bring a little curiosity.
@@ -34,7 +34,7 @@ The lectures folder holds the actual teaching materials.
 [Personal](https://sebastianmeier.eu)
 
 ## Feedback
-If you have ideas how to improve this class, you find an error or something else, simply use GitHub's [issue system](https://github.com/FH-Potsdam/teaching-parametric-design/issues) and [create a new issue](https://github.com/FH-Potsdam/teaching-parametric-design/issues/new). I will try to respond as soon as possible.
+If you have ideas how to improve this class, you find an error or something else, simply use GitHub's [issue system](https://github.com/FH-Potsdam/teaching-inclusive-design/issues) and [create a new issue](https://github.com/FH-Potsdam/teaching-inclusive-design/issues/new). I will try to respond as soon as possible.
 
 ## License
 Available under MIT license.

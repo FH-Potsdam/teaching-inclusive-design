@@ -6,9 +6,10 @@
 <html lang="en-US">
   {% include 'parts/head.njk' %}
   <body>
-    <header id="header">
+    <div id="header-sketch"></div>
+    <header id="header" class="home">
       <div id="home-header">
-        <h1>Parametric Design</h1>
+        <h1>Inclusive Design</h1>
         <h2>{{ translations.subtitle[locale] | safe }}</h2>
         <a href="https://www.fh-potsdam.de">
           <picture id="header-logo">
@@ -17,15 +18,11 @@
           </picture>
         </a>
       </div>
-      <div id="header-sketch"></div>
     </header>
     <div id="container">
       <div id="nav">
         <nav>
           {{ renderNav(collections, page, locale, content) }}
-        </nav>
-        <nav>
-          {{ renderLang(page.url) }}
         </nav>
       </div>
       <main>

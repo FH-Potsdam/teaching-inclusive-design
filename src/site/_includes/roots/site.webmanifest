@@ -1,7 +1,7 @@
 {
-    "name": "Parametric Design",
-    "short_name": "Parametric Design",
-    "start_url": "https://parametric-design.fh-potsdam.de",
+    "name": "Inclusive Design",
+    "short_name": "Inclusive Design",
+    "start_url": "https://inclusive-design.fh-potsdam.de",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

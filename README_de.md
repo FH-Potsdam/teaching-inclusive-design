@@ -1,9 +1,9 @@
 [English version](README.md)
-# Parametric Design
-![Parametric Design](https://github.com/FH-Potsdam/teaching-parametric-design/blob/main/parametric-design.png?raw=true)
-Lehrmaterial für das Seminar "Parametric Design" am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam.
+# Inclusive Design
+![Inclusive Design](https://github.com/FH-Potsdam/teaching-inclusive-design/blob/main/parametric-design.png?raw=true)
+Lehrmaterial für das Seminar "Inclusive Design" am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam.
 
-**Willkommen zu Parametric Design 👋**
+**Willkommen zu Inclusive Design 👋**
 Dieses Seminar ist eine Einführung in das Gestalten mit Code. Das Seminar unterscheidet sich von anderen Creative Coding Einführungen durch einen Fokus auf das Erstellen von digitalen Artefakten, welche in anderen Anwendungen oder auch Rapid Prototyping Werkzeugen weitergenutzt werden können (wie z.B. Laser-Cutter, CNC-Fräsen, 3D-Drucker oder Stickmaschinen).
 
 Zur Teilnahme werden keine Vorkenntnisse in der Programmierung oder ähnlichen Systemen benötigt. Etwas Neugierde auf Neues sollte völlig ausreichend.
@@ -34,7 +34,7 @@ Der lectures-Ordner enthält das eigentliche Vorlesungsmaterial.
 [Personal](https://sebastianmeier.eu)
 
 ## Feedback
-Falls du Ideen hast wie wir diesen Kurs besser machen können oder du einen Fehler gefunden hast, benutze gerne GitHubs [Issue System](https://github.com/FH-Potsdam/teaching-parametric-design/issues) und [erstelle einen neuen Issue](https://github.com/FH-Potsdam/teaching-parametric-design/issues/new). Ich versuche so schnell wie möglich darauf zu reagieren.
+Falls du Ideen hast wie wir diesen Kurs besser machen können oder du einen Fehler gefunden hast, benutze gerne GitHubs [Issue System](https://github.com/FH-Potsdam/teaching-inclusive-design/issues) und [erstelle einen neuen Issue](https://github.com/FH-Potsdam/teaching-inclusive-design/issues/new). Ich versuche so schnell wie möglich darauf zu reagieren.
 
 ## License
 Verfügbar unter MIT Lizenz.

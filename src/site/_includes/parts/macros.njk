@@ -91,7 +91,7 @@
 
 {% macro renderCrumbs(collections, key, locale) %}
 <ul class="breadcrumbs">
-  <li><a href="/{{locale}}/">Parametric Design</a></li>
+  <li><a href="/{{locale}}/">Inclusive Design</a></li>
   {% if key != null %}
   {% for entry in collections.all | eleventyNavigationBreadcrumb(key, { includeSelf: true }) %}
   {% if entry.key != locale %}
@@ -104,9 +104,13 @@
 </ul>
 {% endmacro %}
 
-{% macro video(url, poster, captionFile, captionLabel, locale, dgUrl="") %}
+{% macro video(url, poster, captionFile, captionLabel, locale) %}
 <video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
-  <source src="{% if locale == "dg" %}{{dgUrl}}{% else %}{{url}}{% endif %}" type="video/mp4">{% if captionFile != null %}  <track label="{{captionLabel}}" kind="subtitles" srclang="{{locale}}" src="/images/subtitles/{{captionFile}}.vtt">{% endif %}
+  <source src="{{url}}" type="video/mp4">
+  {% if captionFile != null %}
+  <track label="{{captionLabel}} - Deutsch" kind="subtitles" srclang="de" src="/images/subtitles/{{captionFile}}_de.vtt">
+  <track label="{{captionLabel}} - English" kind="subtitles" srclang="en" src="/images/subtitles/{{captionFile}}_en.vtt">
+  {% endif %}
   Your browser does not support the video tag.
 </video>
 {% endmacro %}

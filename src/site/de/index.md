@@ -1,5 +1,5 @@
 ---
-title: Deutsch
+title: 
 layout: home
 eleventyNavigation:
   key: de
@@ -9,27 +9,31 @@ locale: de
 
 {% from "../_includes/parts/macros.njk" import img %}
 
-Dies ist die Website für den "Parametric Design" Kurs am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam ([FHP](https://www.fh-potsdam.de/)). Diese Website öffnet Einsteiger*innen einen Startpunkt für das Gestalten durch Programmierung. Es werden nur kostenlose und quelloffene Anwendungen genutzt. Das Seminar ist so konzipiert, dass die Inhalte auf der Website untermauert werden von gemeinsamen Aktivitäten in den Vorlesungen. Die Website stellt aber auch in sich allein einen guten Einstieg in das Thema dar.
+Dies ist die Website für den *"Inclusive Design*" Kurs am [Fachbereich Design](https://www.fh-potsdam.de/design/) der Fachhochschule Potsdam ([FHP](https://www.fh-potsdam.de/)). Diese Website dient als Nachschlagewerk für Methoden und Wissen rund um *Inclusive Design*. Das Seminar ist so konzipiert, dass die Inhalte auf der Website untermauert werden von gemeinsamen Aktivitäten in den Vorlesungen.
 
-<p class="start-button-container">
-  <a href="/{{locale}}/introduction" class="start-button"><span>Kurs beginnen &raquo;</span></a>
-</p>
-
-Dieser Kurs richtet sich an alle Designer*innen und Kreative, die Herausfinden wollen, wie man durch Programmierung digitale und physische Artefakte gestalten kann. An der FHP werden die Studiengänge Interface-, Produkt- und Kommunikationsdesign angeboten, welche eine zentrale Rolle in diesem Kurs spielen werden.
+Dieser Kurs richtet sich besonders an alle Designer*innen und Kreative die am Anfang ihrer beruflichen oder akadmischen Laufbahn stehen. Die Inhalte bieten einen Überblick über das Arbeitsfeld und sollen Ideen und Denkanstöße für zukünftige Projekte liefern. An der FHP werden die Studiengänge Interface-, Produkt- und Kommunikationsdesign angeboten, die Abschnitte dieses Lehrangebots nehmen speziell Bezug zu diesen Designdisziplinen.
 
 {{ img('potsdam-design.svg', 'FHP Design-Studiengänge', '400px') }}
 
 ## Worum geht es in diesem Kurs?
 
-Was unterscheidet diesen Kurs von anderen Einführungen in die Programmierung? Dieser Kurs hat einen starken Fokus auf Schnittstellen zwischen Artefakten, welche wir durch Code generieren und anderen Anwendungen und Fertigungsverfahren (siehe unten). Wir werden für den gesamten Kurs JavaScript nutzen, da es eine gute Programmiersprache für den Einstieg ist. Man benötigt keinerlei Vorkenntnisse, um an diesem Kurs teilzunehmen. Wenn du Programmierer\*in oder Informatiker\*in werden möchtest, dann ist dieser Kurs vllt. eine vorsichtiger erster Einstieg, aber wahrscheinlich nicht der Kurs, nach dem du suchst. Wenn man als Desginer*in programmieren lernt, ist ein wichtiger Teil, neben den technischen Grundlagen, zu lernen wie man seine Ideen in Code überträgt. In diesem Kurs beschäftigen wir uns mit diesem Teil speziell durch Gruppenaktivitäten im Seminar. Auf der Website finden sich ein paar Übungen als Startpunkt. Darüber hinaus ist das Wichtigste auf dem Weg sich sicherer im Umgang mit Code zu fühlen, zu programmieren, experimentieren und auszuprobieren.
+*Inclusive Design* ist ein Ansatz, der darauf abzielt, Produkte, Dienstleistungen bis hin zu unserer gebauten Umwelt zu schaffen, die den unterschiedlichen Bedürfnissen aller Menschen gerecht werden, unabhängig von Alter, Fähigkeiten oder Hintergrund. Indem von Anfang an Flexibilität, Benutzerfreundlichkeit und Zugänglichkeit im Vordergrund stehen, stellt *Inclusive Design* sicher, dass jeder, auch Menschen mit z.B. Behinderungen, mit von uns gestalteten und produzierten Artefakten umgehen können.
 
-<figure>
-    <picture>
-      <source srcset="/images/material/interfaces-dark.svg" media="(prefers-color-scheme: dark)">
-      <img style="width:500px;" src="/images/material/interfaces.svg" alt="Die Möglichkeiten von Code-driven Design." />
-    </picture>
-    <figcaption><span>Die Möglichkeiten von Code-driven Design.</span></figcaption>
-</figure>
+Neben dem Begriff des *Inclusive Designs* und den darunter zusammengefassten Konzepten, gibt es eine ganze Bandbreite verwandter Begrifflichkeiten:
+
+
+**Accessbility / Barrierefreiheit** konzentriert sich darauf, Produkte und Räume für Menschen mit Behinderungen nutzbar zu machen, was normalerweise spezifische Anpassungen beinhaltet, um etablierte Zugänglichkeitsstandards zu erfüllen. Inklusives Design teilt dieses Ziel, hat jedoch eine breitere Sichtweise und versucht, Barrieren für alle Benutzer zu beseitigen, nicht nur für diejenigen mit Behinderungen.
+
+**Universal / Universelles Design** legt Wert darauf, Produkte und Räume zu schaffen, die von so vielen Menschen wie möglich ohne Anpassungsbedarf aufgerufen, verstanden und genutzt werden können. Universelles Design hat seinen Ursprung in der Architektur und im Produktdesign und ist eng mit *Inclusive Design* verbunden, kann jedoch präskriptiver sein und Prinzipien bieten, die die Schaffung von von Natur aus zugänglichen Umgebungen für alle leiten.
+
+**Design for all / Design für Alle** spiegelt einen internationalen Ansatz ähnlich dem Universal Design wider, der darauf abzielt, sicherzustellen, dass Produkte, Dienstleistungen und Umgebungen von allen ohne spezielle Anpassungen genutzt werden können und ist somit auch sehr nah an den Ansätzen des *Inclusive Designs*.
+
+In der **Ergonomie** geht es darum, Produkte und Umgebungen zu entwerfen, die den physischen und kognitiven Fähigkeiten der Benutzer:innen entsprechen und Komfort, Sicherheit und Effizienz verbessern. Inklusives Design integriert ergonomische Prinzipien, um die Benutzerfreundlichkeit für ein breites Spektrum von Benutzern sicherzustellen, wobei unterschiedliche Körpertypen, Fähigkeiten und Interaktionsarten berücksichtigt werden.
+
+
+Die Kernprinzipien des *Inclusive Designs* – wie Flexibilität, Benutzerfreundlichkeit und Anpassungsfähigkeit – ermutigen Designer:innen, Vielfalt als grundlegenden Teil der Benutzererfahrung zu betrachten. Indem *Inclusive Design* absichtlich eine breite Palette menschlicher Eigenschaften berücksichtigt, fördert es Umgebungen und Produkte, die von Natur aus für alle nutzbar sind, und trägt so zur sozialen Gerechtigkeit bei und erhöht die Benutzerzufriedenheit.
+
+*Inclusive Design* zielt nicht nur darauf ab, die Benutzerfreundlichkeit zu verbessern, sondern befasst sich auch proaktiv mit potenziellen negativen Auswirkungen des Designs, wie Diskriminierung, Datenschutzbedenken und anderen unbeabsichtigten Folgen, insbesondere für vulnerable Gruppen. Bei diesem Ansatz wird untersucht, wie bestimmte Designentscheidungen bestimmte Benutzer:innengruppen aufgrund von Faktoren wie sozioökonomischem Status Migrationshintergrund, Behinderung oder Alter unbeabsichtigt marginalisieren oder benachteiligen können. Durch die aktive Untersuchung dieser Risiken fördert *Inclusive Design* ethische Überlegungen und schützt vor schädlichen Vorurteilen. Dadurch wird sichergestellt, dass Produkte und Dienstleistungen das Wohlbefinden, die Autonomie und die Würde aller Benutzer:innen unterstützen und nicht untergraben. Diese Wachsamkeit ist entscheidend für die Entwicklung von Lösungen, die nicht nur unterschiedlichen Bedürfnissen gerecht werden, sondern auch die Rechte der Benutzer:innen respektieren und schützen, insbesondere derjenigen in vulnerablen Gruppen.
 
 ## Das Team
 
@@ -58,15 +62,11 @@ Was unterscheidet diesen Kurs von anderen Einführungen in die Programmierung? D
 
 ## Open Educational Resources
 
-Dieses Seminar wird unter CC BY-ND 4.0 zur Verfügung gestellt. Dies bedeutet, dass die Inhalte dieser Website, sowie die Inhalte im zugehörigen GitHub-Repo auch von anderen Lehrenden eingesetzt werden können. Es muss nur die Quelle angegeben werden. Warum dürfen die Inhalte nicht verändert (remix) werden? Es gibt viel Videomaterial auf dieser Website, diese und die Grafiken wollen wir nicht verändert sehen. Falls jemand Interesse hat, einen spezifischen Inhalt zu verändern, nehmt vorher bitte Kontakt mit uns auf. Die Code-Beispiele sind alle unter der MIT Lizenz veröffentlicht. Entsprechend können diese ohne Einschränkungen weitergenutzt werden.
+Dieses Seminar wird unter CC BY-ND 4.0 zur Verfügung gestellt. Dies bedeutet, dass die Inhalte dieser Website, sowie die Inhalte im zugehörigen GitHub-Repo auch von anderen Lehrenden eingesetzt werden können. Es muss nur die Quelle angegeben werden. Warum dürfen die Inhalte nicht verändert (remix) werden? Es gibt viel Videomaterial auf dieser Website, diese und die Grafiken wollen wir nicht verändert sehen. Falls jemand Interesse hat, einen spezifischen Inhalt zu verändern, nehmt vorher bitte Kontakt mit uns auf.
 
 ## Mitmachen
 
-Dir gefällt dieses Projekt und du willst uns unterstützen? Wenn du einen Fehler findest, kannst du ihn hier auf GitHub [melden](https://github.com/FH-Potsdam/teaching-parametric-design/issues). Wir freuen uns auch immer über weitere Übersetzungen. Wenn du Interesse hast die Inhalte zu übersetzen, nimm Kontakt mit uns auf. Du kennst weitere Projekte für die [Inspirations-Seite](inspiration.md) ? Dann schick uns einfach eine Email.
-
-## Danke
-
-Sebastian: Ich habe nicht Informatik oder ähnliches studiert (auch wenn ich meinen PhD später in der Informatik gemacht habe). Vor mehr als zwei Jahrzehnten hat mir das Internet Programmieren beigebracht oder besser gesagt, die Communities, die ihr Wissen dort geteilt haben (zu Beginn besonders [SELFHTML](https://wiki.selfhtml.org)). Deshalb bin ich heute sehr dankbar für alle großartigen Open Educational Resources. In den letzten Jahren haben mich besonders die OER-Initiativen von  [Tamara Munzner (Datenvisualisierung)](https://www.cs.ubc.ca/~tmm/) and [Daniel Shiffman (Creative Coding)](https://shiffman.net/) inspiriert. Ich danke allen Open Source und Open Educational Resource Contributors!!!
+Dir gefällt dieses Projekt und du willst uns unterstützen? Wenn du einen Fehler findest, kannst du ihn hier auf GitHub [melden](https://github.com/FH-Potsdam/teaching-inclusive-design/issues).
 
 ## Privatsphäre geht vor!
 

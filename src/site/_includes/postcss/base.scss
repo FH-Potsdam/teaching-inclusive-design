@@ -27,6 +27,7 @@ body {
 
 main {
   flex-grow: 1;
+  z-index:1;
   /* width: 0px; */
 }
 
@@ -58,9 +59,25 @@ h1+h2{
   transform: translateY(0%);
 }
 
+#header-sketch{
+  position:absolute;
+  top:-50px;
+  left:0;
+  width:100%;
+  max-width:100%;
+  z-index: 0;
+  &>canvas{
+    max-width:100%;
+  }
+}
+
 header {
+  z-index:1;
   width: 100%;
   margin-bottom:50px;
+  &.home {
+    margin-bottom:150px;
+  }
   padding-top:30px;
   &>div {
     width:90%;
@@ -72,13 +89,6 @@ header {
     &>div {
       flex-grow:1;
     }
-    &#header-sketch{
-      width:100%;
-      max-width:100%;
-      &>canvas{
-        max-width:100%;
-      }
-    }
     &#home-header{
       padding-top:50px;
       width:90%;
@@ -88,9 +98,11 @@ header {
       text-align:center;
       h1 {
         padding-bottom:0;
+        text-shadow: -2px -2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, 2px 2px 0 #FFF;
       }
       h2{
         padding-bottom:20px;
+        text-shadow: -2px -2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, 2px 2px 0 #FFF;
       }
     }
   }

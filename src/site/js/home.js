@@ -1,40 +1,9 @@
-let sketchWidth = window.innerWidth;
-const sketchHeight = 250;
-
-const divisionSets = [3,4,5,8,12,20];
-const spheres = [];
-let colors = [];
-const radius = 70;
-const buffer = 40;
-let shapeCount = 1;
-const padding = radius;
-
-let color1;
-let color2;
-
-let cam;
-let font;
-
-function preload () {
-  font = loadFont('/fonts/inter/inter-v7-vietnamese_latin-ext-700.ttf');
-}
+let sketchWidth = 500;
+let sketchHeight = 400;
 
 function updateSize () {
   sketchWidth = window.innerWidth;
   resizeCanvas(sketchWidth, sketchHeight);
-  shapeCount = Math.min(divisionSets.length, Math.floor(sketchWidth / ((radius + buffer) * 2)));
-  ortho(
-    -width / 2,
-     width / 2,
-     -height / 2,
-     height / 2,
-     0,
-     800
-  );
-  colors = [];
-  for (let d = 0; d < shapeCount; d += 1) {
-    colors.push(lerpColor(color1, color2, shapeCount === 1 ? 0 : d / (shapeCount-1)));
-  }
 }
 
 function debounce(func, time = 100){
@@ -47,25 +16,18 @@ function debounce(func, time = 100){
 
 window.addEventListener("resize", debounce( updateSize, 150 ));
 
-function setup () {
-  // blue to green
-  color1 = color(20,168,115);
-  color2 = color(16,139,208);
+const radius = 1;
+const buffer = 40;
+let shapeCount = 1;
+const padding = radius;
+const divisionSets = [5];
+const spheres = [];
+let colors = [];
 
-  const canvas = createCanvas(sketchWidth, sketchHeight, WEBGL);
-  canvas.parent('header-sketch');
-  updateSize();
+let color1;
+let color2;
 
-  noLights();
-
-
-  for (let d = 0; d < divisionSets.length && d < shapeCount; d += 1) {
-    spheres.push(spherePoly(radius, divisionSets[d]));
-  }
-
-  textFont(font);
-  textSize(14);
-}
+let cam;
 
 function polar(radius, angle) {
   const rad = Math.PI / 180 * angle;
@@ -85,38 +47,6 @@ const rotationOffset = {
   y: 0,
   z: Math.PI / 4
 };
-
-function draw() {
-  clear();
-  push();
-
-  for (let d = 0; d < shapeCount; d += 1) {
-    push();
-    const c = colors[d];;
-    stroke(c);
-    translate(-sketchWidth/2 + sketchWidth / shapeCount * d + (sketchWidth / shapeCount / 2), 0, 0);
-    fill(c);
-    strokeWeight(4);
-    push();
-    translate(-20, radius + 25, 0);
-    text('d=' + divisionSets[d], 0, 0, 0);
-    translate(-5, 4);
-    line(-5, 0, 5, 0);
-    line(0, -5, 0, 5);
-    pop();
-    noFill();
-    strokeWeight(2);
-    const rotAngle = Math.PI / 180 * rotation;
-    rotateZ(mouseX/window.innerWidth * Math.PI * 2 + rotationOffset.z + rotAngle);
-    rotateY(mouseY/window.innerHeight * Math.PI * 2 + rotationOffset.y + rotAngle);
-    rotateX(rotAngle + rotationOffset.x);
-    model(spheres[d]);
-    pop();
-  }
-  rotation += 0.25;
-
-  pop();
-}
 
 function spherePoly (radius, divisions) {
   const obj = new p5.Geometry(1, 1);
@@ -165,4 +95,125 @@ function spherePoly (radius, divisions) {
   obj.gid = 'geom_' + divisions;
   // obj.computeNormals();
   return obj;
+}
+
+/*--------------------------------------------------*/
+
+let smallSpheres = [];
+let numSmallSpheres = 15;
+let trailLength = 75; // Number of points in the trail (orbit path)
+let sphereMin = 100;
+let sphereMax = 190;
+
+function setup() {
+  updateSize();
+
+  setAttributes('antialias', true);
+  bezierDetail(50);
+  curveDetail(50);
+  const canvas = createCanvas(sketchWidth, sketchHeight, WEBGL);
+  canvas.parent('header-sketch');
+
+  // blue to green
+  color1 = color(20,168,115);
+  color2 = color(16,139,208);
+
+  noLights();
+
+  colors = [];
+  for (let d = 0; d < shapeCount; d += 1) {
+    colors.push(lerpColor(color1, color2, shapeCount === 1 ? 0 : d / (shapeCount-1)));
+  }
+
+  for (let d = 0; d < divisionSets.length && d < shapeCount; d += 1) {
+    spheres.push(spherePoly(radius, divisionSets[d]));
+  }  
+
+  // Create small spheres with random starting angles (azimuth and inclination)
+  for (let i = 0; i < numSmallSpheres; i++) {
+    let azimuth = TWO_PI * (i / numSmallSpheres);  // Horizontal angle
+    let inclination = random(0, PI);               // Vertical angle
+    let distance = random(sphereMin, sphereMax);               // Distance from the big sphere
+    let azimuthSpeed = random(0.01, 0.03);         // Speed of horizontal orbit
+    let inclinationSpeed = random(0.005, 0.02);    // Speed of vertical orbit
+
+    // Each sphere has a trail that stores previous positions
+    let trail = [];
+
+    smallSpheres.push({
+      azimuth,
+      inclination,
+      distance,
+      azimuthSpeed,
+      inclinationSpeed,
+      trail
+    });
+  }
+}
+
+let centerColor = 0;
+let centerAdd = 0.01;
+
+function draw() {
+  clear();
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    background("#141414");
+  } else {
+    background("white");
+  }
+  
+
+  // Draw the orbit trails and the small spheres
+  strokeCap(ROUND);
+  for (let i = 0; i < smallSpheres.length; i++) {
+    let s = smallSpheres[i];
+
+    // Spherical coordinates to Cartesian
+    let x = s.distance * sin(s.inclination) * cos(s.azimuth);
+    let y = s.distance * cos(s.inclination);       // Height component
+    let z = s.distance * sin(s.inclination) * sin(s.azimuth);
+
+    // Add the current position to the trail
+    s.trail.push(createVector(x, y, z));
+
+    // Limit the length of the trail
+    if (s.trail.length > trailLength) {
+      s.trail.splice(0, 1);
+    }
+
+    // Draw the orbit trail (line connecting previous positions)
+    noFill();
+    for (let j = 0; j < s.trail.length; j++) {
+      if (j > 0) {
+        let pos1 = s.trail[j-1];
+        let pos2 = s.trail[j];
+
+        // if (i === 0 && frameCount === 200) {
+        //   console.log(pos1.z);
+        // }
+
+        let tc = lerpColor(color2, color1, abs(pos1.z)/sphereMax);
+        // tc.setAlpha(255*j/s.trail.length);
+        stroke(tc);
+        strokeWeight(2*20*abs(pos1.z)/sphereMax * j/s.trail.length);
+
+        line(pos1.x, pos1.y, pos1.z, pos2.x, pos2.y, pos2.z);
+      }
+    }
+
+    // Draw the small sphere at its current position
+    push();
+    translate(x, y, z);
+    color2.setAlpha(255);
+    let tc = lerpColor(color2, color1, abs(z)/sphereMax);
+    fill(tc);
+    noStroke();
+    sphere(2*10*abs(z)/sphereMax); // Small sphere size
+    pop();
+
+    // Update angles for orbiting motion
+    s.azimuth += s.azimuthSpeed;           // Orbit around Y-axis (azimuth)
+    s.inclination += s.inclinationSpeed;   // Orbit up/down (inclination)
+  }
+
 }
