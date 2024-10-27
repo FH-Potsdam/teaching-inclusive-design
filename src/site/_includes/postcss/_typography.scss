@@ -89,6 +89,25 @@ a {
   }
 }
 
+h2.wIcon {
+  background-repeat: no-repeat;
+  background-position: left 28px;
+  background-size: 38px auto;
+  padding-left: 46px;
+}
+
+h2.wIcon.icon-video { background-image: url(/images/icons/video.svg); }
+h2.wIcon.icon-bookmark { background-image: url(/images/icons/bookmark.svg); }
+h2.wIcon.icon-lightning { background-image: url(/images/icons/lightning.svg); }
+h2.wIcon.icon-star { background-image: url(/images/icons/star.svg); }
+
+@media (prefers-color-scheme: dark) {
+  h2.wIcon.icon-video { background-image: url(/images/icons/video-dark.svg); }
+  h2.wIcon.icon-bookmark { background-image: url(/images/icons/bookmark-dark.svg); }
+  h2.wIcon.icon-lightning { background-image: url(/images/icons/lightning-dark.svg); }
+  h2.wIcon.icon-star { background-image: url(/images/icons/star-dark.svg); }
+}
+
 @media screen and (max-width: 768px) {
   h1 { @include font__h1-mobile; padding-bottom: 15px; }
   main h1 { font-size:30px; }

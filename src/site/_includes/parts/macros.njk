@@ -26,7 +26,7 @@
 {% if entry.order != -1 %}
 <li class="level{{level}}{% if entry.url in page.url %} active{% endif %}">
   <a{% if entry.url == page.url %} class="active"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a>
-  {% if entry.url == page.url and level == 2 %}
+  {% if entry.url == page.url and level == 1 %}
   {{ content | toc | safe }}
   {% endif %}
 {% if entry.children.length %}
@@ -106,17 +106,12 @@
 
 {% macro video(url, poster, captionFile, captionLabel, locale) %}
 <video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
-  <source src="{{url}}" type="video/mp4">
-  {% if captionFile != null %}
-  <track label="{{captionLabel}} - Deutsch" kind="subtitles" srclang="de" src="/images/subtitles/{{captionFile}}_de.vtt">
-  <track label="{{captionLabel}} - English" kind="subtitles" srclang="en" src="/images/subtitles/{{captionFile}}_en.vtt">
-  {% endif %}
-  Your browser does not support the video tag.
+  <source src="{{url}}" type="video/mp4" />{% if captionFile != null %}<track label="{{captionLabel}} - Deutsch" kind="subtitles" srclang="de" src="/images/subtitles/{{captionFile}}_de.vtt" /><track label="{{captionLabel}} - English" kind="subtitles" srclang="en" src="/images/subtitles/{{captionFile}}_en.vtt" />{% endif %}Your browser does not support the video tag.
 </video>
 {% endmacro %}
 
-{% macro h2(headline) %}
-<h2 id="{{headline | slugify}}">{{headline}}</h2>
+{% macro h2(headline, hide=false, icon="") %}
+<h2{% if icon != "" %} class="wIcon icon-{{icon}}"{% endif %}{% if hide == false %} id="{{headline | slugify}}"{% endif %}>{{headline}}</h2>
 {% endmacro %}
 
 {% macro definition(name, params, description) %}
@@ -160,4 +155,17 @@
 {% if description %}
 <p>{{description}}</p>
 {% endif %}
+{% endmacro %}
+
+{% macro referenceEntry(title, description, links, date="") %}
+<p class="referenceEntry">
+{% if date != "" %}<i>{{date}}</i><br />{% endif %}
+<strong>{{title}}</strong><br />
+{{description}}
+</p>
+<ul class="referenceEntry">
+{% for link in links %}
+  <li><a href="{{link[1]}}">{{link[0]}}</a></li>
+{% endfor %}
+</ul>
 {% endmacro %}

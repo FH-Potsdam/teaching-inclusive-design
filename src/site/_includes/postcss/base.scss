@@ -970,6 +970,25 @@ h3.inspiration {
   }
 }
 
+p.referenceEntry {
+  i {
+    font-size:0.8em;
+  }
+  strong {
+    font-size: 1.2em;
+  }
+  margin-bottom: 7px;
+  padding-bottom: 0;
+}
+ul.referenceEntry{
+  margin:0 0 30px 0;
+  padding:0;
+  li {
+    margin:0;
+    padding:0;  
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: $dark-bg;
@@ -1043,6 +1062,23 @@ h3.inspiration {
       border:none;
       color: black;
       background-color: rgba(170, 170, 170, 1);
+    }
+  }
+
+  header {
+    &>div {
+      &#home-header{
+        h1 {
+          color:#fff;
+          padding-bottom:0;
+          text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+        }
+        h2{
+          color:#fff;
+          padding-bottom:20px;
+          text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+        }
+      }
     }
   }
 }
