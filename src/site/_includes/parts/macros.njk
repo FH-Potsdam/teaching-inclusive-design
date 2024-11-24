@@ -106,7 +106,7 @@
 
 {% macro video(url, poster, captionFile, captionLabel, locale) %}
 <video width="1920" height="1080" preload="none" poster="{{poster}}" style="max-width:100%; height: auto;" controls>
-  <source src="{{url}}" type="video/mp4" />{% if captionFile != null %}<track label="{{captionLabel}} - Deutsch" kind="subtitles" srclang="de" src="/images/subtitles/{{captionFile}}_de.vtt" /><track label="{{captionLabel}} - English" kind="subtitles" srclang="en" src="/images/subtitles/{{captionFile}}_en.vtt" />{% endif %}Your browser does not support the video tag.
+  <source src="{{url}}" type="video/mp4" />{% if captionFile != null %}<track label="Untertitel - Deutsch" kind="subtitles" srclang="de" src="/images/subtitles/{{captionFile}}_de.vtt" /><track label="Subtitles - English" kind="subtitles" srclang="en" src="/images/subtitles/{{captionFile}}_en.vtt" />{% endif %}Your browser does not support the video tag.
 </video>
 {% endmacro %}
 

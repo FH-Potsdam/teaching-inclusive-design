@@ -100,12 +100,14 @@ h2.wIcon.icon-video { background-image: url(/images/icons/video.svg); }
 h2.wIcon.icon-bookmark { background-image: url(/images/icons/bookmark.svg); }
 h2.wIcon.icon-lightning { background-image: url(/images/icons/lightning.svg); }
 h2.wIcon.icon-star { background-image: url(/images/icons/star.svg); }
+h2.wIcon.icon-bio { background-image: url(/images/icons/bio.svg); }
 
 @media (prefers-color-scheme: dark) {
   h2.wIcon.icon-video { background-image: url(/images/icons/video-dark.svg); }
   h2.wIcon.icon-bookmark { background-image: url(/images/icons/bookmark-dark.svg); }
   h2.wIcon.icon-lightning { background-image: url(/images/icons/lightning-dark.svg); }
   h2.wIcon.icon-star { background-image: url(/images/icons/star-dark.svg); }
+  h2.wIcon.icon-bio { background-image: url(/images/icons/bio-dark.svg); }
 }
 
 @media screen and (max-width: 768px) {

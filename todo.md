@@ -1,25 +1,8 @@
-- noLoop in intro additional graphic
+https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility
+https://www.w3.org/TR/WCAG22/
 
-- add URL origin security 
 
-- font/text examples
 
-- editor errors
 
-- update graphics (math.md)
-
-- update ar/vr > p5xr
-
-- seminar planning overview
-
-- override noLoops in editor...
-
-- redefining functions (hmmmm puh)
-
-- screen reader test for parametric
-
-- funding call
-
-- reference icons: https://iconoir.com/
-
-- 3D nurbs lib example 
+https://www.bundesfachstelle-barrierefreiheit.de/SharedDocs/Rechtssammlung/GiMedAusbV.html
+https://www.bundesfachstelle-barrierefreiheit.de/SharedDocs/Rechtssammlung/DuPMedAusbV.html
