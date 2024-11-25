@@ -17,7 +17,7 @@ layout: default
 
 {{video("https://fhpcloud.fh-potsdam.de/s/oTZ8zp2TEsJLkET/download/rights.mp4", "/images/thumbnails/inclusive.jpg", "inclusive", translations.subtitles[locale], locale)}}
 
-{{h2('Katta Spiel', false, 'bio')}}
+{{h2('Zur Person', false, 'bio')}}
 
 [Katta Spiel](https://informatics.tuwien.ac.at/people/katta-spiel) ist Assistenzprofessor:in an der Fakultät für Informatik der TU Wien im Bereich Mensch-Computer-Interaktion. Ihre Forschung ist im Bereich Visual Computing and Human-Centered Technology verankert und fokussiert sich auf Critical Access—die Untersuchung marginalisierter Perspektiven auf Emboddied Computing. Dabei verbinden sie interdisziplinäre Ansätze aus den Gender Studies, Disability Studies, Kulturwissenschaften und dem Partizipativen Design, um Technologien zu entwickeln, die die vielfältigen Lebensrealitäten ihrer Nutzer:innen widerspiegeln.
 
