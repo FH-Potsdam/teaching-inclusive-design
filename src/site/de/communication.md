@@ -1,8 +1,8 @@
 ---
-title: TODO
+title: Kommunikationsdesign
 eleventyNavigation:
-  title: TODO
-  key: de_results
+  title: Kommunikation
+  key: de_communication
   order: 20
   parent: de
 locale: de
