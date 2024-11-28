@@ -1,7 +1,7 @@
 ---
 title: Produkt- und Industriedesign
 eleventyNavigation:
-  title: Produkt
+  title: Physisch
   key: de_industriedesign
   order: 3
   parent: de
@@ -60,6 +60,14 @@ Textildesign verbindet Funktionalität und Ästhetik mit wachsender sozialer und
   - *Langlebigkeit und Reparierbarkeit*: Robuste Verarbeitung und modulare Designs fördern eine längere Nutzung und erleichtern Reparaturen.
   - *Soziale Verantwortung*: Faire Arbeitsbedingungen und transparente Lieferketten gehören zu den Grundprinzipien.
 
+### Ergonomie und Standards
+
+Im Produkt- und Industriedesign stehen Ergonomie, Standards und Barrierefreiheit in enger Verbindung mit den Prinzipien des Inclusive Designs. Ergonomie sorgt dafür, dass Produkte und Arbeitsumgebungen an die physischen und kognitiven Fähigkeiten der Nutzer:innen angepasst sind. Sie bildet die Grundlage für komfortable und sichere Nutzungserlebnisse und unterstützt die Idee, Produkte für eine möglichst breite Nutzergruppe zugänglich zu machen.
+
+Standards und Normen spielen dabei eine Schlüsselrolle, indem sie Mindestanforderungen für Barrierefreiheit und Bedienbarkeit definieren, etwa bei Türbreiten, Griffhöhen oder taktilen Markierungen. Diese Standards fördern nicht nur die Sicherheit und Qualität von Produkten, sondern ermöglichen auch eine universelle Nutzung. Inclusive Design erweitert diese Ansätze, indem es gezielt auf die Bedürfnisse von Menschen eingeht, die durch traditionelle Ergonomie oder Standards oft nicht ausreichend berücksichtigt werden, z. B. Personen mit sensorischen Einschränkungen oder Kinder.
+
+Allerdings ist Standardisierung ein zweischneidiges Schwert. Einerseits macht sie Anforderungen fassbar und verpflichtend, andererseits birgt sie zwei wesentliche Herausforderungen. Zum einen erwecken Standards oft den trügerischen Eindruck, alle Bedürfnisse abzudecken. Tatsächlich spiegeln sie jedoch häufig nur die konsensfähigen Perspektiven der Standardisierungsgesellschaft wider, was systematische Verzerrungen (Biases) zulasten marginalisierter Gruppen bedeuten kann. Zum anderen sind viele Standards nicht frei zugänglich, sondern hinter finanziellen und rechtlichen Barrieren verborgen. Dies erschwert ihre Anwendung, besonders für kleinere Unternehmen, gemeinnützige Organisationen oder in Regionen mit begrenzten Ressourcen, und widerspricht dem inklusiven Grundgedanken, den sie eigentlich fördern sollen.
+
 ### Inclusive Design: Verantwortung für Mensch und Umwelt
 
 Inclusive Design geht über die reine Funktionalität hinaus und setzt auch bei ethischen und ökologischen Fragestellungen an. Es ist ein Gestaltungsansatz, der Fairness und soziale Verantwortung in den Mittelpunkt stellt. Produkte sollen niemanden ausschließen – unabhängig von körperlichen, kognitiven oder finanziellen Einschränkungen. Designer tragen hier die Verantwortung, gesellschaftliche Chancengleichheit zu fördern und kulturelle Vielfalt zu respektieren. Gleichzeitig ist Nachhaltigkeit ein zentraler Bestandteil inklusiver Gestaltung. Durch die Verwendung langlebiger, recycelbarer Materialien und die Förderung von Kreislaufwirtschaft wird darauf geachtet, ökologische Auswirkungen zu minimieren. Produkte sollen so entwickelt werden, dass sie nach ihrer Lebensdauer repariert, wiederverwendet oder recycelt werden können.
@@ -72,4 +80,21 @@ Liste mit verwandten INCOM Projekten
 
 {{h2('Referenzen', false, 'bookmark')}}
 
-### TBC
+### <ins>Standards</ins>
+
+Im Gegensatz zu den nächsten Abschnitten zu Interface- und Kommunikationsdesign, ist der Bereich des Industrialdesigns wesentlich schwieriger Abzudecken was Richtlinien zur Gestaltung betrifft, da ein so diverses Feld von Bereichen abgedeckt wird (z.B. von der Gestaltung eines Essenshilfsmittel, über Fahrzeuge, Arbeitsplätzen bis hin zur Gestaltung von Ausstellungsexponaten). Deshalb können im Folgenden nicht alle relevanten Standards aufgeführt werden:
+
+{{referenceEntry('Deutschen Institut für Normung e. V. (DIN)', 'Wichtigste deutsche Organisation für Normen und Standards', [['Offizielle Website mit Webshop zum Erwerb von Standards', 'https://www.din.de/de'],['DIN-Normen auf Wikipedia.org', 'https://de.wikipedia.org/wiki/Kategorie:DIN']], '-')}}
+
+{{referenceEntry('International Organization for Standardization', 'Internationale Organisation parallel zur Deutschen DIN', [['Offizielle Website mit Webshop zum Erwerb von Standards','https://www.iso.org/standards.html'], ['ISO-Normen auf Wikipedia.org','https://de.wikipedia.org/wiki/Kategorie:ISO-Norm']], '-')}}
+
+### <ins>Anthropometrie</ins>
+
+{{referenceEntry('RAUMPILOT - Grundlagen', 'Grundlagen in Anthropometrie der Wüstenrot Stiftung', [['PDF Download','https://wuestenrot-stiftung.de/publikationen/raumpilot-grundlagen-pdf/']], '2010')}}
+
+{{referenceEntry('Ergonomische Arbeitsplatzgestaltung', 'Übersicht zu Anforderungen an Ergonomische Arbeitsplatzgestaltung, Fraunhofer - IPA', [['PDF Download','https://www.ipa.fraunhofer.de/content/dam/ipa/de/documents/Kompetenzen/Biomechatronische-Systeme/Ergonomische_Arbeitsplatzgestaltung_IPA2018.pdf']], '2018')}}
+
+### <ins>Ausstellungsdesign</ins>
+
+{{referenceEntry('Das inklusive Museum', 'Ein Leitfaden zu Barrierefreiheit und Inklusion - Deutscher Museums Bund', [['PDF Download','https://www.museumsbund.de/wp-content/uploads/2024/04/2013-leitfaden-das-inklusive-museum.pdf']], '2013')}}
+
