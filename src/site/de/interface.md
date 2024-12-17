@@ -17,7 +17,7 @@ eleventyNavigation:
 
 {{h2('Zur Person', false, 'bio')}}
 
-Stephanie Hankey
+Stephanie Hankey ist Designerin, Technologin und Aktivistin, die seit über 20 Jahren international an der Schnittstelle von Technologie, Menschenrechten und Bürgerrechten arbeitet. Mit ihrem Hintergrund in Kunst, Design und Technologie konzentriert sie sich auf Themen wie Privatsphäre, persönliche Daten und Ethik. Sie ist Geschäftsführerin der Berliner NGO [Tactical Technology Collective](https://tacticaltech.org/), die sie 2003 mitbegründete, sowie Mitgründerin der Kreativagentur [Tactical Studios](https://tacticalstudios.org/). Zudem war sie Co-Kuratorin der Ausstellungen „Nervous Systems“ und „The Glass Room“. Für ihre Arbeit als Sozialunternehmerin wurde sie mit einem Ashoka Fellowship ausgezeichnet. 2016/17 war sie Affiliate am Berkman Klein Center for Internet and Society der Harvard University und 2017 Visiting Industry Associate am Oxford Internet Institute der Universität Oxford. Sie hat einen Abschluss in Design- und Kunstgeschichte von der Manchester Metropolitan University sowie einen Master in Computerbezogenem Design vom Royal College of Art in London.
 
 {{h2('In der Praxis', false, 'lightning')}}
 
