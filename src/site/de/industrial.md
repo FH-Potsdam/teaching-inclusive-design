@@ -62,7 +62,7 @@ Textildesign verbindet Funktionalität und Ästhetik mit wachsender sozialer und
 
 ### Ergonomie und Standards
 
-Im Produkt- und Industriedesign stehen Ergonomie, Standards und Barrierefreiheit in enger Verbindung mit den Prinzipien des Inclusive Designs. Ergonomie sorgt dafür, dass Produkte und Arbeitsumgebungen an die physischen und kognitiven Fähigkeiten der Nutzer:innen angepasst sind. Sie bildet die Grundlage für komfortable und sichere Nutzungserlebnisse und unterstützt die Idee, Produkte für eine möglichst breite Nutzergruppe zugänglich zu machen.
+Im Produkt- und Industriedesign stehen Ergonomie, Standards und Barrierefreiheit in enger Verbindung mit den Prinzipien des Inclusive Designs. Ergonomie sorgt dafür, dass Produkte und Arbeitsumgebungen an die physischen und kognitiven Fähigkeiten der Nutzer\*innen angepasst sind. Sie bildet die Grundlage für komfortable und sichere Nutzungserlebnisse und unterstützt die Idee, Produkte für eine möglichst breite Nutzergruppe zugänglich zu machen.
 
 Standards und Normen spielen dabei eine Schlüsselrolle, indem sie Mindestanforderungen für Barrierefreiheit und Bedienbarkeit definieren, etwa bei Türbreiten, Griffhöhen oder taktilen Markierungen. Diese Standards fördern nicht nur die Sicherheit und Qualität von Produkten, sondern ermöglichen auch eine universelle Nutzung. Inclusive Design erweitert diese Ansätze, indem es gezielt auf die Bedürfnisse von Menschen eingeht, die durch traditionelle Ergonomie oder Standards oft nicht ausreichend berücksichtigt werden, z. B. Personen mit sensorischen Einschränkungen oder Kinder.
 
